@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="WebApplication1.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="css/sporpartnerim.css" rel="stylesheet" />
+    <a href="css/sporpartnerim.scss"></a>
+    <a href="bos/css/_bootstrap-grid.scss"></a>
+    <link href="bos/css/_bootstrap-reboot.css" rel="stylesheet" />
+    <a href="bos/css/_bootstrap-reboot.scss"></a>
+    <a href="bos/css/_bootstrap.scss"></a>
+    <a href="bos/css/_fancybox.scss"></a>
+    <link href="bos/css/_fontisto.css" rel="stylesheet" />
+    <a href="bos/css/_fontisto.scss"></a>
+    <a href="bos/css/_sf.scss"></a>
+    <a href="bos/css/main.scss"></a>
+    <link href="bos/css/sf.css" rel="stylesheet" />
+
+
+    <script src="bos/js/app.js"></script>
+    <script src="bos/js/bootstrap.js"></script>
+    <script src="bos/js/fancybox.js"></script>
+    <script src="bos/js/jquery.js"></script>
+    <script src="bos/js/main.js"></script>
+    <script src="bos/js/owl.js"></script>
+    <script src="bos/js/placeholder.js"></script>
+    <script src="bos/js/tap.js"></script>
+    <script src="bos/js/tether.js"></script>
+    <a href="bos/css/"></a>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>SporPartnerim</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

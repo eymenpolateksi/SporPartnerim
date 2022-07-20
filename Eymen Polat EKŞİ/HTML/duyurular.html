@@ -1,0 +1,113 @@
+
+<html>
+<head>
+<title>sporpartnerim</title>
+<link rel="stylesheet" href="css/sporpartnerim.css">
+<link href="css/duyurular.css" rel="stylesheet" />
+</head>
+<body class="arkaresim">
+<div class="ustmenu">
+<ul class="liste">
+  <li><a href="index.html">ANASAYFA</a></li>
+  <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+  <li><a href="duyurular.html">DUYURULAR</a></li>
+  <li><a href="galeri.html">GALERİ</a></li>
+  <li><a href="etkinlikler.html">ETKİNLİKLER</a></li>
+    <li><a href="iletisim.html">İLETİŞİM</a></li>
+</ul>
+</div>
+<div class="logo">
+<img src="img/logo.png">
+</div>
+
+<noscript><h2 >DUYURU PANOSU</h2></noscript>
+<noscript><h2 >DUYURU PANOSU</h2></noscript>
+
+<table width="350" border="4" cellspacing="0" cellpadding="0" bordercolor="#CC6600">
+  <div class="slogan"><h1>SPOR PARTNERİM DUYURULAR</H1>
+
+<tr> <td>
+  <script language="JavaScript1.2">
+
+
+
+
+var scrollerwidth="1356px"
+
+var scrollerheight="400px"
+
+
+var scrollerspeed=1
+
+
+
+
+
+
+var scrollercontent='<center><font face="Arial" color="orange" size="5"><b>SporPartnerim.com Hoşgeldiniz<br><br>SporPartnerim Açılış Partisi<br><br>Herkes Davetlidir!<br><br>17.06.18<br><br>ISTANBUL-CADDEBOSTAN</b></font><center>'
+
+var pauseit=1
+
+
+
+
+scrollerspeed=(document.all)? scrollerspeed : Math.max(1, scrollerspeed-1)
+var copyspeed=scrollerspeed
+var iedom=document.all||document.getElementById
+var actualheight=''
+var cross_scroller, ns_scroller
+var pausespeed=(pauseit==0)? copyspeed: 0
+
+function populate(){
+if (iedom){
+cross_scroller=document.getElementById? document.getElementById("iescroller") : document.all.iescroller
+cross_scroller.style.top=parseInt(scrollerheight)+2+"px"
+cross_scroller.innerHTML=scrollercontent
+actualheight=cross_scroller.offsetHeight
+}
+else if (document.layers){
+ns_scroller=document.ns_scroller.document.ns_scroller2
+ns_scroller.top=parseInt(scrollerheight)+2
+ns_scroller.document.write(scrollercontent)
+ns_scroller.document.close()
+actualheight=ns_scroller.document.height
+}
+lefttime=setInterval("scrollscroller()",10)
+}
+window.onload=populate
+
+function scrollscroller(){
+
+if (iedom){
+if (parseInt(cross_scroller.style.top)>(actualheight*(-1)+2))
+cross_scroller.style.top=parseInt(cross_scroller.style.top)-copyspeed+"px"
+else
+cross_scroller.style.top=parseInt(scrollerheight)+2+"px"
+}
+else if (document.layers){
+if (ns_scroller.top>(actualheight*(-1)+8))
+ns_scroller.top-=copyspeed
+else
+ns_scroller.top=parseInt(scrollerheight)+8
+}
+}
+
+if (iedom||document.layers){
+with (document){
+if (iedom){
+write('<div style="position:relative;width:'+scrollerwidth+';height:'+scrollerheight+';overflow:hidden" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=scrollerspeed">')
+write('<div id="iescroller" style="position:absolute;left:0px;top:10px;width:100%;">')
+write('</div></div>')
+}
+else if (document.layers){
+write('<ilayer width='+scrollerwidth+' height='+scrollerheight+' name="ns_scroller">')
+write('<layer name="ns_scroller2" width='+scrollerwidth+' height='+scrollerheight+' left=0 top=10 onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=scrollerspeed"></layer>')
+write('</ilayer>')
+}
+}
+}
+
+</script> </td></tr> </table>
+</div>
+</head>
+</html>

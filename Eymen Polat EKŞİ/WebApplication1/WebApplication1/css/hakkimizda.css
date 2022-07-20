@@ -1,0 +1,19 @@
+.hakkindayazi {
+    max-width: 1000px;
+    margin: auto;
+    display: block;
+    margin-top: 80px;
+
+    h1{
+      color:#ff7800;
+      font-size: 30px;
+      font-family:arial;
+      padding-top: 50px;
+    }
+    p{
+      margin-top: 50px;
+      font-size: 20px;
+      font-family: arial;
+      color: white;
+    }
+  }

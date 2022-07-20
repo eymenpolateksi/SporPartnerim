@@ -1,0 +1,293 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49C449B4-024A-4F99-89E6-7127976AC84E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Blog.aspx" />
+    <Content Include="blog.html" />
+    <Content Include="bos\css\main.css" />
+    <Content Include="bos\css\sf.css" />
+    <Content Include="bos\css\_bootstrap-reboot.css" />
+    <Content Include="bos\css\_fontisto.css" />
+    <Content Include="bos\css\_owl.css" />
+    <Content Include="bos\fonts\fontisto\fontisto.svg" />
+    <Content Include="bos\img\mobile_phone.png" />
+    <Content Include="bos\index.html" />
+    <Content Include="bos\js\app.js" />
+    <Content Include="bos\js\bootstrap.js" />
+    <Content Include="bos\js\fancybox.js" />
+    <Content Include="bos\js\jquery.js" />
+    <Content Include="bos\js\main.js" />
+    <Content Include="bos\js\min\main.min.js" />
+    <Content Include="bos\js\min\owl.min.js" />
+    <Content Include="bos\js\owl.js" />
+    <Content Include="bos\js\placeholder.js" />
+    <Content Include="bos\js\tap.js" />
+    <Content Include="bos\js\tether.js" />
+    <Content Include="css\bxslider.css" />
+    <Content Include="css\sporpartnerim.css" />
+    <Content Include="css\duyurular.css" />
+    <Content Include="Duyurular.aspx" />
+    <Content Include="duyurular.html" />
+    <Content Include="EtkinlikListele.aspx" />
+    <Content Include="EtkinlikOlustur.aspx" />
+    <Content Include="galeri.html" />
+    <Content Include="giris.html" />
+    <Content Include="GirisYap.aspx" />
+    <Content Include="css\hakkimizda.css" />
+    <Content Include="hakkimizda.html" />
+    <Content Include="iletisim.html" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\2.jpg" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\mac.jpg" />
+    <Content Include="img\user.png" />
+    <Content Include="img\yurume.jpg" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="UyeDuzenle.aspx" />
+    <Content Include="uyeduzenle.html" />
+    <Content Include="UyeOl.aspx" />
+    <Content Include="uyeol.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Duyurular.aspx.cs">
+      <DependentUpon>Duyurular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Duyurular.aspx.designer.cs">
+      <DependentUpon>Duyurular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikListele.aspx.cs">
+      <DependentUpon>EtkinlikListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EtkinlikListele.aspx.designer.cs">
+      <DependentUpon>EtkinlikListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EtkinlikOlustur.aspx.cs">
+      <DependentUpon>EtkinlikOlustur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EtkinlikOlustur.aspx.designer.cs">
+      <DependentUpon>EtkinlikOlustur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GirisYap.aspx.cs">
+      <DependentUpon>GirisYap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GirisYap.aspx.designer.cs">
+      <DependentUpon>GirisYap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master.Master.cs">
+      <DependentUpon>master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master.Master.designer.cs">
+      <DependentUpon>master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyeDuzenle.aspx.cs">
+      <DependentUpon>UyeDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyeDuzenle.aspx.designer.cs">
+      <DependentUpon>UyeDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyeOl.aspx.cs">
+      <DependentUpon>UyeOl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyeOl.aspx.designer.cs">
+      <DependentUpon>UyeOl.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bos\css\main.scss" />
+    <Content Include="bos\css\_bootstrap-grid.scss" />
+    <Content Include="bos\css\_bootstrap-reboot.scss" />
+    <Content Include="bos\css\_bootstrap.scss" />
+    <Content Include="bos\css\_fancybox.scss" />
+    <Content Include="bos\css\_fontisto.scss" />
+    <Content Include="bos\css\_owl.scss" />
+    <Content Include="bos\css\_sf.scss" />
+    <Content Include="bos\fonts\.DS_Store" />
+    <Content Include="bos\fonts\fontisto\.DS_Store" />
+    <Content Include="bos\fonts\fontisto\fontisto.eot" />
+    <Content Include="bos\fonts\fontisto\fontisto.ttf" />
+    <Content Include="bos\fonts\fontisto\fontisto.woff" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Black.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Bold.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Heavy.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Light.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Medium.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Regular.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Semibold.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Thin.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Display-Ultralight.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-Bold.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-BoldItalic.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-Heavy.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-HeavyItalic %281%29.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-HeavyItalic.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-Light.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-Medium.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-MediumItalic.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-Regular.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-RegularItalic.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-Semibold.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-SemiboldItalic.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-Ultrathin.otf" />
+    <Content Include="bos\fonts\sf\SF-UI-Text-UltrathinItalic.otf" />
+    <Content Include="bos\fonts\sf\SFMono-Bold.otf" />
+    <Content Include="bos\fonts\sf\SFMono-BoldItalic.otf" />
+    <Content Include="bos\fonts\sf\SFMono-Heavy.otf" />
+    <Content Include="bos\fonts\sf\SFMono-HeavyItalic %281%29.otf" />
+    <Content Include="bos\fonts\sf\SFMono-HeavyItalic.otf" />
+    <Content Include="bos\fonts\sf\SFMono-Light.otf" />
+    <Content Include="bos\fonts\sf\SFMono-Medium.otf" />
+    <Content Include="bos\fonts\sf\SFMono-MediumItalic.otf" />
+    <Content Include="bos\fonts\sf\SFMono-Regular.otf" />
+    <Content Include="bos\fonts\sf\SFMono-RegularItalic.otf" />
+    <Content Include="bos\fonts\sf\SFMono-Semibold.otf" />
+    <Content Include="bos\fonts\sf\SFMono-SemiboldItalic.otf" />
+    <Content Include="bos\img\.DS_Store" />
+    <Content Include="bos\img\Thumbs.db" />
+    <Content Include="bos\psd\home.psd" />
+    <Content Include="css\sporpartnerim.scss" />
+    <Content Include="master.Master" />
+    <None Include="packages.config" />
+    <Content Include="prepros-6.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bos\photo\" />
+    <Folder Include="font\gotham\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50743</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50743/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

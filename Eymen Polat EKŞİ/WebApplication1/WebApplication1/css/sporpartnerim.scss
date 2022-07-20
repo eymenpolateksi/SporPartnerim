@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+  
+.arkaresim {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.ustmenu {
+  padding-top: 50px; }
+
+.liste {
+  list-style: none;
+  width: 70%;
+  height: auto;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto; }
+  .liste li {
+    display: table-cell;
+    float: none; }
+    .liste li a {
+      text-decoration: none;
+      color: white;
+      font-family: arial;
+      line-height: 60px;
+      font-size: 15px;
+      letter-spacing: 5px;
+      display: inline-block;
+      font-weight: bold; }
+
+.logo {
+  text-align: left;
+  padding-left: 20px;
+  width: auto;
+  display: block;
+  position: absolute;
+  top: 30px; }
+  .logo img {
+    height: 100px;
+    width: 150px; }
+
+.slogan {
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: arial;
+  height: 120px;
+  display: block;
+  width: 600px; }
+  .slogan p {
+    background: rgba(232, 111, 36, 0.6);
+    display: inline-block; }
+  .slogan a {
+    background: rgba(3, 28, 53, 0.45); }
+
+.button {
+  background: #031c35;
+  border-radius: 17px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 12px 18px;
+  min-width: 90px;
+  margin-right: 10px;
+  margin-top: 30px;
+  -webkit-box-shadow: 3px 3px 4px #000;
+  box-shadow: 3px 3px 4px #000; }
+
+.arkarenk {
+  background-color: white; }
+
+.ustmenu2 {
+  background-color: #636363;
+  height: 90px;
+  width: 100%;
+  display: table;
+  margin-top: 0; }
+
+.ortaalan {
+  text-align: center;
+  padding-top: 90px;
+  font-family: arial;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  padding-bottom: 25px; }
+
+.ortamenu {
+  width: 437px;
+  height: 37px;
+  display: block;
+  margin: auto;
+  background-color: black; }
+  .ortamenu ul {
+    position: relative;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%; }
+    .ortamenu ul li {
+      color: white;
+      display: table-cell;
+      list-style: none;
+      word-spacing: 5px;
+      font-family: arial;
+      font-size: 12px;
+      padding-top: 12px; }
+
+.bilgi {
+  position: relative;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%; }
+  .bilgi img {
+    width: 200px;
+    height: 170px; }
+
+.uyeol {
+  display: block;
+  width: 535px;
+  height: auto;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10px; }
+  .uyeol h1 {
+    display: block;
+    text-align: center;
+    font-family: arial;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    padding-top: 120px;}
+    .uyeol img{
+      height: 150px;
+      width: 200px;
+      padding-left: 160px;
+      margin-bottom: 50px;
+    }
+  .uyeol span {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    font-family: arial; }
+  .uyeol input {
+    display: block;
+    margin: auto;
+    resize: none;
+    background: rgba(109, 109, 108, 0.6);
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    width: 280px;
+    height: 40px; }
+    .uyeol textarea{
+      display: block;
+      margin: auto;
+      resize: none;
+      background: rgba(109, 109, 108, 0.6);
+      border-radius: 10px;
+      border: 0;
+      width: 280px;
+      height: 100px;
+
+    }
+
+.buttonuye {
+  background: #031c35;
+  border-radius: 17px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 12px 18px;
+  min-width: 90px;
+  margin-right: 10px;
+  margin-top: 30px;
+  -webkit-box-shadow: 3px 3px 4px #000;
+  box-shadow: 3px 3px 4px #000;
+  background: rgba(6, 32, 57, 0.8);
+  text-align: center;
+  margin-left: 45%; }
+.uyeol bilgiler
+{
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: arial;
+    height: 120px;
+    display: block;
+    width: 600px;
+
+
+
+
+   }
+    .bilgiler h1 {
+      background: rgba(15, 11, 96, 0.5);
+      display: inline-block;
+      font-family: arial;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      width: 302px;
+      height: 40px;
+      margin-left:100px;
+      text-align: center;
+      padding-top: 20px;
+
+
+
+    }
+    .bilgiler p{
+      background: rgba(87, 87, 87, 0.5);
+      display: inline-block;
+      font-family: arial;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      width: 302px;
+      height: 40px;
+      margin-left:100px;
+      text-align: center;
+      padding-top: 20px;
+
+    }
+
+
+.etkinlikler{
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: arial;
+    height: 120px;
+    display: block;
+    width: 600px;
+
+
+
+}
+
+.etkinlikler h1 {
+  background: rgba(15, 11, 96, 0.5);
+  display: inline-block;
+  font-family: arial;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  width: 302px;
+  height: 40px;
+  margin-left:100px;
+  text-align: center;
+  padding-top: 20px;
+  display: block;
+}
+.etkinlikler img{
+  float: left;
+  padding-left: 30px;
+
+}
+
+
+.galeri img{
+  padding-top: 30px;
+  padding-left: 380px;
+}
+.galeri h1{
+  display: block;
+  text-align: center;
+  font-family: arial;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  padding-top: 120px;
+
+}

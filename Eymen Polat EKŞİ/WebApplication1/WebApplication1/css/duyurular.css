@@ -1,0 +1,13 @@
+#arka-karanlik{  background-color:black;  opacity:0.3;  -moz-opacity:0.70;  filter:alpha(opacity=70);  z-index:20;  height:100%;  width:100%;  background-repeat:repeat;  position:fixed;  top:0px;  left:0px; }
+
+#pano {  z-index:50;  position:absolute;  background-color:#29a2d6;  width:530px;  height:230px;  left: 50%;  top: 50%;  margin-top:-185px;  margin-left:-275px;  padding:20px;  -moz-box-shadow:inset 0 0 200px #000;  -webkit-box-shadow:inset 0 0 200px #000;  box-shadow:inset 0 0 200px #000; }
+
+#pano p a{  color:#000;  text-decoration:none; }
+
+#pano p{  text-align:left;  font:14px trebuchet ms;  color:#fff;text-align:center; }
+
+#pano h1{  font:22px trebuchet ms;  margin-bottom:50px;  text-align:center; }
+
+#pano .kapat{  right:0;  top:0;  font:17px "trebuchet ms";  text-align:center;  z-index:60;  position:absolute;  background-color:darkred;  margin:-12px -12px 0 0;  color:#fff;  width:20px;  height:20px;  cursor:pointer; }
+
+#pano .kapat:hover{  background-color:#fff;  color:darkred; }
